@@ -1,0 +1,156 @@
+*
+
+{
+    font-family: "open sans pro",sans-serif;
+    overflow-x: hidden;
+}
+.header {
+    background-color: #76c9fc;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+.check
+{
+  position: relative;
+  bottom: 19px;
+}
+.mydivs
+{
+    display: flex;
+}
+  
+  ul .my_input {
+    cursor: pointer;
+    padding-left: 20px;
+    background: #eee;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    border: none;
+    width: 50%;
+    margin-top:  15px;
+    outline: none;
+    text-align:start;
+    border-radius: 15px;
+    resize: none;
+
+  }
+ul .my_input:read-only
+{
+    background: rgb(121, 241, 163);
+    color: white;
+}
+  
+  
+  .croix {
+   float: right;
+   display: flex;
+   margin-top: 30px;
+   margin-right: 50px;
+  }
+  .input-cross
+  {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .croix:hover {
+    transform: scale(2);
+    color: #76c9fc;
+  }
+
+  
+  #myInput {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  #myInput:focus
+  {
+    border: 1px solid #76c9fc;
+    box-shadow: 0px 0px 2px rgb(24, 78, 70);
+  }
+  
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: black;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+.flexing
+{
+    display: flex;
+}
+.my_btn
+{
+  margin-left: 80%;
+  background-color: white;
+  border: none;
+}
+.my_btn:hover
+{
+  background-color:rgb(121, 241, 163);
+}
+.pop
+{
+  color: black;
+}
+.bbtn
+{
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(121, 241, 163);
+  padding: 10px 10px 10px 10px;
+}
+.bbtn:active 
+{
+  background-color:white;
+  
+}
+.removes
+{
+ display: flex;
+ justify-content: center;
+ position: relative;
+ bottom: 20px;
+ left: 40%;
+}
+
+.removes:hover
+{
+
+  transform: scale(2);
+  color: #76c9fc;
+}
+.h 
+{
+  position: relative;
+  top: 10px;
+}
+.clear_btn 
+{
+  color: red;
+}
+#clean 
+{
+  position: relative;
+  left: 60%;
+
+}
