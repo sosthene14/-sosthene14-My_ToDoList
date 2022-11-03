@@ -59,7 +59,7 @@
              car le X du haut est un enfant de l'element contenant les noms, je pense que je vais oublié, compliqué :)*/
 
              pop.removeAttribute("readonly")    
-             console.log((pop.value.charAt(pop.textContent.length - 1))) 
+             localStorage.setItem(contains_two.value+"X",contains_two.value);
          }
      else
          {
@@ -121,5 +121,39 @@ function getting()
         
          cross.innerText = "X";
      }
+     /* La fonction action.onclick fait la meme chose que celle de l'historique, j'ai essayé de faire une fonction commune pour les deux, mais ça m'a crée des problèmes :)*/
+     action.onclick = function ()         
+     {
+        
+         if (action.checked == false)
+         {
+             /* notes à moi meme, le X a ete ajouté car le X du haut permettant d'effacer l'historique a comme ete additionné aux noms des differentes keys,
+             car le X du haut est un enfant de l'element contenant les noms, je pense que je vais oublié, compliqué :)*/
+             contains_two.removeAttribute("readonly") 
+             localStorage.setItem(contains_two.value+"X",contains_two.value);
+         }
+     else
+         {
+             contains_two.setAttribute("readonly","readonly");
+             localStorage.setItem(contains_two.value+"X",contains_two.value);                  
+         }
+     }
+    
 
-}
+     /* effacer la tache si l'element croix est appuiyé*/
+
+     cross.onclick = function()
+     {
+         li.removeChild(contains);
+         localStorage.removeItem(contains_two.value+"X");
+     }
+
+     /*ajouter les differents elements enfants aux parents afin de permettre l'affichage de ceux ci*/
+     
+     li.appendChild(contains);
+     contains.appendChild(contains_two);
+     contains.appendChild(action);
+     contains.appendChild(cross);  
+           
+
+ }
