@@ -85,7 +85,7 @@ function getting()
     
      /*Affectation de la valeur du input à la constante get*/
      get = input.value;
-     
+
      /*verification de l'existence de get afin de verifier si l'entrée de l'utilisateur n'est pas constitué uniquement d'espaces vides*/   
  
      if (!get.trim())
@@ -93,4 +93,33 @@ function getting()
          alert("Bien tenté :) ah ah ah");
          document.getElementById("myInput").value = space.trim();
      }
+     else    
+     {  
+        /*Ici nous ferrons à peu pres la meme chose que sur l'historique, pourquoi avoir divisé ça s'ils font la meme chose ? , tout simplement parceque la fonction 
+        loader est une fonction qui est appelé dès le chargement de la page et son contenu depend en parti du local storage, tandique la fonction getting()
+        elle ne se charge que d'afficher et de sauvegarder le contenu saisis par l'utilisateur est elle est appelé uniquement à partir du button AJOUTER TACHE*/
+         document.getElementById("myInput").value = space.trim();
+         const contains = document.createElement("div");
+         const contains_two = document.createElement('textarea');
+         const action = document.createElement('input');
+         const cross = document.createElement("div");
+
+         /*creation d'elemnts qui vont heriter d'une classe css créee precedement*/
+         
+         contains_two.value = get.trim();
+
+         contains_two.rows = "1"
+         contains_two.cols = "1"
+
+         contains_two.classList.add("my_input");
+         action.classList.add("check");
+         cross.classList.add("croix");
+         action.type = "checkbox";
+
+         localStorage.setItem(contains_two.value+"X",contains_two.value);
+         
+        
+         cross.innerText = "X";
+     }
+
 }
