@@ -1,4 +1,4 @@
-   /*faire appeler aux elements du code html-->*/
+   /*faire appeler aux elements du code html grace au DOM-->*/
    
    const heads =  document.querySelector("#myDIV");
    const input = document.querySelector("#myInput");
