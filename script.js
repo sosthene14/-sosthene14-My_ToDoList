@@ -8,4 +8,11 @@
    const btn = document.querySelector("#btnb")
    const liste = []
    const space = " "
- 
+   /*creation de la premiere fonction loader dont le role consistera à charger lhistorique à partir du localstorage*/
+   function loader()
+   {
+    for (var i = 0; i < localStorage.length; ++i)
+    {
+     liste.push(localStorage.getItem(localStorage.key(i)))
+    }
+   }
