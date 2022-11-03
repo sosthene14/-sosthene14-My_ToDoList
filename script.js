@@ -47,6 +47,36 @@
      li.appendChild(pop)
      li.appendChild(remove)
      li.appendChild(actions)
-            
+
+     /*Une fonction onclick, dont le role est de gerer les etats de la checkbox, pour les historiques uniquement */
+     actions.onclick = function ()
+           
+     {
+        
+         if (actions.checked == false)
+         {
+             /* notes à moi meme, le X a ete ajouté car le X du haut permettant d'effacer l'historique a comme ete additionné aux noms des differentes keys,
+             car le X du haut est un enfant de l'element contenant les noms, je pense que je vais oublié, compliqué :)*/
+
+             pop.removeAttribute("readonly")    
+             console.log((pop.value.charAt(pop.textContent.length - 1))) 
+         }
+     else
+         {
+             pop.setAttribute("readonly","readonly");
+                
+         }
+     }
+/*La fonction remove, permettant d'affacer l'historique en appuiyant sur la croix*/
+     remove.onclick = function()
+     {
+         
+         li.removeChild(pop);
+         li.removeChild(remove)
+         li.removeChild(actions)
+         localStorage.removeItem(pop.value+"X");
+ 
+     }
+    
    }
 }
