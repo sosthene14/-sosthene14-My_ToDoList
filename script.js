@@ -80,3 +80,17 @@
     
    }
 }
+function getting()
+{
+    
+     /*Affectation de la valeur du input à la constante get*/
+     get = input.value;
+     
+     /*verification de l'existence de get afin de verifier si l'entrée de l'utilisateur n'est pas constitué uniquement d'espaces vides*/   
+ 
+     if (!get.trim())
+     {
+         alert("Bien tenté :) ah ah ah");
+         document.getElementById("myInput").value = space.trim();
+     }
+}
