@@ -1,3 +1,4 @@
+
    /*faire appeler aux elements du code html grace au DOM-->*/
    
    const heads =  document.querySelector("#myDIV");
@@ -90,7 +91,7 @@ function getting()
  
      if (!get.trim())
      {
-         alert("Bien tenté :) ah ah ah");
+         alert("Veuillez saisir une valeur valide");
          document.getElementById("myInput").value = space.trim();
      }
      else    
@@ -120,7 +121,7 @@ function getting()
          
         
          cross.innerText = "X";
-     }
+     
      /* La fonction action.onclick fait la meme chose que celle de l'historique, j'ai essayé de faire une fonction commune pour les deux, mais ça m'a crée des problèmes :)*/
      action.onclick = function ()         
      {
@@ -155,5 +156,5 @@ function getting()
      contains.appendChild(action);
      contains.appendChild(cross);  
            
-
+    }
  }
