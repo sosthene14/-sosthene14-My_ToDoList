@@ -11,4 +11,4 @@ Todolist est une application de liste de tâches développée en utilisant HTML,
   * `git clone https://github.com/your-username/todolist.git`
   * Ouvrez le fichier `index.html` dans votre navigateur web
 ## Capture d'ecran du programme
-![Capture d'ecran du programme](chemin/vers/image.png)
+![Capture d'ecran du programme](https://github.com/sosthene14/-sosthene14-My_ToDoList/blob/principal/capture.png)
